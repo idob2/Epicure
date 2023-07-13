@@ -1,0 +1,54 @@
+%shared-button {
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
+}
+%shared-sizes {
+  width: 20px;
+  height: 20px;
+}
+.main-navigation {
+  display: flex;
+  flex-shrink: 0;
+  background-color: white;
+  width: 100%;
+  button {
+    @extend %shared-button;
+  }
+  .order-bag-div {
+    display: flex;
+    justify-content: end;
+    gap: 5%;
+    width: 50%;
+    img{
+        width: 20px;
+        height: 20px;
+    }
+    .bag-button {
+      padding-right: 24px;
+    }
+  }
+
+  .hambur-logo-div {
+    display: flex;
+    width: 52%;
+    justify-content: space-between;
+    .about-logo {
+      margin-top: 9px;
+      margin-bottom: 7px;
+      margin-left: 40px;
+      // padding-right: 2%;
+      width: 32px;
+      height: 32px;
+    }
+    .hamburg-button {
+      margin: 11px 31px 11px 20px;
+      .hamburg-img {
+        width: 24px;
+        height: 24px;
+        flex-shrink: 0;
+      }
+      
+    }
+  }
+}
