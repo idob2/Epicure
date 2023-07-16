@@ -1,7 +1,7 @@
-import SearchIcon from "../../assets/nav_bar_images/Group.svg";
 import ExitFromMenu from "../../assets/general_images/General.svg";
 
 import "./Search.scss"
+import SearchBar from "../SearchBar/SearchBar";
 const Search = (props: any) => {
   return (
     <div className="search-page">
@@ -9,14 +9,7 @@ const Search = (props: any) => {
             <img className="exit-img" src={ExitFromMenu} alt="Exit" />
         </button>
         <div className="search-div">
-      <div className="search-bar">
-        <img className="search-img" src={SearchIcon} alt="Hamburg" />
-        <input
-          className="search-input"
-          type="text"
-          placeholder="Search for restaurant cuisine, chef"
-        />
-      </div>
+      <SearchBar></SearchBar>
     </div>
     </div>
    
