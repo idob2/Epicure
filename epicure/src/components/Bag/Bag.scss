@@ -9,6 +9,8 @@
     height: 218px;
     gap: 83px;
     flex-shrink: 0;
+    position: absolute;
+    z-index: 2;
     .bag-container{
         display: flex;
     flex-direction: column;

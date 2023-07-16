@@ -9,6 +9,8 @@ import NavBar from "../NavBar/NavBar";
 import Menu from "../Menu/Menu";
 import Bag from "../Bag/Bag";
 import Search from "../Search/Search";
+import HomeImage from "../HomeImage/HomeImage";
+import PopularResturants from "../PopularResturants/PopularResturants";
 
 const CompleteNavBar = () => {
   const [isMenuSelected, setIsMenuSelected] = useState(false);
@@ -22,6 +24,8 @@ const CompleteNavBar = () => {
   };
 
   const handleSearchClick = () => {
+    setIsMenuSelected(false);
+    setIsBegSelected(false);
     isSearchSelected ? setIsSearchSelected(false) : setIsSearchSelected(true);
   };
 
@@ -39,7 +43,7 @@ const CompleteNavBar = () => {
           handleBagClick={handleBagClick}
         ></NavBar>
       }
-      {isBagSelected && <Bag></Bag>}
+      {isBagSelected && <Bag></Bag>}    
     </div>
   );
 };

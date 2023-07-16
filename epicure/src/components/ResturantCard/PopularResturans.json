@@ -1,0 +1,8 @@
+[
+    {"imgUrl": "../../assets/resturantImages/claro.svg",
+    "name": "Claro"},
+    {"imgUrl": "../../assets/resturantImages/Lumina.svg",
+    "name": "Lumina", "chefName": ""},
+    {"imgUrl": "../../assets/resturantImages/tiger-lily.svg",
+    "name": "Tiger-Lily"}
+]
